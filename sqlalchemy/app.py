@@ -6,7 +6,7 @@ db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:Parman_95@localhost:3306/test-flask?charset=utf8mb4&collation=utf8mb4_general_ci'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://username:password@localhost:3306/test-flask?charset=utf8mb4&collation=utf8mb4_general_ci'
     app.config['RESTFUL_JSON'] = {
     'ensure_ascii': False
     }
